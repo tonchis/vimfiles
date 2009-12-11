@@ -1,3 +1,5 @@
+This vimfiles are cloned from soveran's with a few personal adjustments in snippets and colors.
+
 Usage
 =====
 

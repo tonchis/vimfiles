@@ -52,7 +52,7 @@ if has("gui_running")
   highlight Todo                      guibg=#000000 guifg=#996600 gui=italic
   highlight Type                      guifg=#DA4939 gui=NONE
   " highlight Visual                    guibg=#5A647E
-  highlight Visual                    guibg=#181818
+  highlight Visual                    guibg=#181818 guifg=#A7B3D3
   highlight Folded                    guifg=#666666 guibg=#111111
 
   highlight VertSplit                 guifg=#202020 guibg=#202020 gui=NONE   ctermfg=darkgray ctermbg=darkgray cterm=NONE
