@@ -73,15 +73,20 @@ nmap gm g$
 " Break the undo chain on every Space
 imap <Space> <Space><C-g>u
 
-" Insert a blank line above the current line
+" Insert a blank line above and below the current line
 imap <C-K> <ESC>O
+imap <C-J> <ESC>o
 
-" Move left and right in insert mode
+" Moves back and foward one word
+imap <C-B> <ESC>bi
+imap <C-E> <ESC>ea
+
+" Move left and right one word
 imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
 
 " Open file in new tab
-nmap <C-O> :tabe 
+nmap <C-O> :tabe
 
 " Run git blame in the current file and display results in the preview window.
 map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>
