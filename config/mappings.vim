@@ -85,8 +85,8 @@ imap <C-E> <ESC>ea
 imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
 
-" Open file in new tab
-nmap <C-O> :tabe
+" Open file in new tab, trailing space is added on purpose
+nmap <C-O> :tabe 
 
 " Run git blame in the current file and display results in the preview window.
 map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>
