@@ -14,7 +14,7 @@ And backup your configuration files:
 
 Now clone this repository:
 
-    git clone git://github.com/soveran/vim-files.git ~/.vim
+    git clone git://github.com/tonchis/vimfiles.git ~/.vim
 
 In your `~/.vimrc` put this:
 
