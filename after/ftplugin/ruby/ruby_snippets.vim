@@ -64,7 +64,7 @@ call IMAP('story--', "story \"<++>\" do\n<++>\nend", 'ruby')
 call IMAP('scenario--', "scenario \"<++>\" do\n<++>\nend", 'ruby')
 call IMAP('setup--', "setup do\n<++>\nend", 'ruby')
 call IMAP('teardown--', "teardown do\n<++>\nend", 'ruby')
-call IMAP('test--', "test <++> do\n<++>\nend", 'ruby')
+call IMAP('test--', "test \"<++>\" do\n<++>\nend", 'ruby')
 
 " RSpec
 call IMAP('context--', "context \"<++>\" do\n<++>\nend", 'ruby')
