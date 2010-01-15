@@ -75,7 +75,6 @@ imap <Space> <Space><C-g>u
 
 " Insert a blank line above and below the current line
 imap <C-K> <ESC>O
-imap <C-J> <ESC>o
 
 " Moves back and foward one word
 imap <C-B> <ESC>bi
@@ -85,8 +84,17 @@ imap <C-E> <ESC>ea
 imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
 
+" Removes the character on the right of the cursor
+imap <C-BS> <ESC>xi
+
 " Open file in new tab, trailing space is added on purpose
 nmap <C-O> :tabe 
+
+" Close tab
+nmap <C-C> :q<CR>
+
+" :Vex in tree form mapping.
+map <C-V> :Vex<CR> 3i
 
 " Run git blame in the current file and display results in the preview window.
 map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>
