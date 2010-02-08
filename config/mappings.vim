@@ -90,11 +90,10 @@ imap <C-BS> <ESC>xi
 " Open file in new tab, trailing space is added on purpose
 nmap <C-O> :tabe 
 
-" Close tab
-nmap <C-C> :q<CR>
-
-" :Vex in tree form mapping.
+" Opens :Vex in tree form.
 map <C-V> :Vex<CR> 3i
 
 " Run git blame in the current file and display results in the preview window.
 map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>
+
+map <C-N> :tabe<CR>:FuzzyFinderTextMate<CR>
