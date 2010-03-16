@@ -26,6 +26,9 @@ if has("gui_running")
   hi link htmlTagName                 xmlTagName
   hi link htmlEndTag                  xmlEndTag
 
+  highlight PmenuSel                  guibg=#554433
+  highlight PMenu                     guifg=#444444 guibg=#d6f5c4 gui=none
+
   highlight Normal                    guifg=#E6E1DC guibg=#090909
   highlight Cursor                    guifg=#000000 guibg=#FFFFFF
   highlight NonText                   guifg=#333333 guibg=#000000

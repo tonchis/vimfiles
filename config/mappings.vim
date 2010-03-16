@@ -96,4 +96,5 @@ map <C-V> :Vex<CR> 3i
 " Run git blame in the current file and display results in the preview window.
 map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>
 
+" Opens FuzzyFinder in new tab
 map <C-N> :tabe<CR>:FuzzyFinderTextMate<CR>
