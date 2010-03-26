@@ -1,17 +1,4 @@
 " Vim color scheme
-"
-" Name:         railscast.vim
-" Maintainer:   Josh O'Rourke <jorourke23@gmail.com>
-" Last Change:  17 Aug 2007
-" License:      public domain
-" Version:      1.1
-"
-" This theme is based on the Railscasts Textmate theme [1]. I used
-" Jo Vermeulen's "vibrantink" theme for Vim [2] as my template for
-" creating this theme.
-"
-" [1] http://railscasts.com/about
-" [2] http://www.vim.org/scripts/script.php?script_id=1794
 
 set background=dark
 hi clear
@@ -64,5 +51,6 @@ if has("gui_running")
   highlight assemblyInstr             guifg=#CC7833
   highlight assemblyDataDirectives    guifg=#CC7833
   highlight assemblyRegister          guifg=#D0D0FF
-  highlight assemblyNumber            guifg=#A5C261
+  highlight assemblyNumber            guifg=#094C6B
+  highlight assemblyComment           guifg=#666666 gui=italic
 endif
