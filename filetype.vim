@@ -56,4 +56,7 @@ augroup filetypedetect
   au! FileType markdown,asciidoc setlocal spell
   au! BufNewFile,BufRead *.txt setf asciidoc
 
+  " Assembly
+  au BufRead,BufNewFile *.asm,*.ASM,*.inc,*.INC,*.lst,*.LST setf assembly
+
 augroup END
