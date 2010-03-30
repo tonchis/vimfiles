@@ -40,12 +40,6 @@ map gF :w! /tmp/spec.results<CR><C-W>gF<CR>
 " Go to mark at the colum where the mark was set
 map ' `
 
-" Mimic command line editing
-map <C-K> <ESC>d$
-map <C-U> <ESC>d0
-imap <C-A> <ESC>0i
-imap <C-E> <ESC>$a
-
 " Move between tabs
 map <C-H> :tabp<CR>
 map <C-L> :tabn<CR>
@@ -57,10 +51,10 @@ imap <MiddleMouse> <Nop>
 imap <2-MiddleMouse> <Nop>
 
 " Deactivate recording
-map q <Nop>
+" map q <Nop>
 
 " Deactivate keyword lookup
-map K <Nop>
+" map K <Nop>
 
 " After a repeat operation, go back to the first character of the previously changed or yanked text
 nmap . .`[
@@ -74,7 +68,7 @@ nmap gm g$
 imap <Space> <Space><C-g>u
 
 " Insert a blank line above and below the current line
-imap <C-K> <ESC>O
+" imap <C-K> <ESC>O
 
 " Moves back and foward one word
 imap <C-B> <ESC>bi
@@ -84,14 +78,11 @@ imap <C-E> <ESC>ea
 imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
 
-" Removes the character on the right of the cursor
-imap <C-BS> <ESC>xi
-
 " Open file in new tab, trailing space is added on purpose
-nmap <C-O> :tabe 
+nmap <C-W> :tabe 
 
 " Opens :Vex in tree form.
-map <C-V> :Vex<CR> 3i
+map <C-X> :Vex<CR> 3i
 
 " Run git blame in the current file and display results in the preview window.
 map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>

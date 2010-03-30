@@ -26,13 +26,14 @@ if has("gui_running")
   hi link htmlTagName                 xmlTagName
   hi link htmlEndTag                  xmlEndTag
 
+  " Colors for the menu when autocompleting
   highlight PmenuSel                  guibg=#554433
-  highlight PMenu                     guifg=#444444 guibg=#d6f5c4 gui=none
+  highlight PMenu                     guifg=#444444 guibg=#FEE3B6 gui=none
 
   highlight Normal                    guifg=#E6E1DC guibg=#090909
   highlight Cursor                    guifg=#000000 guibg=#FFFFFF
   highlight NonText                   guifg=#333333 guibg=#000000
-  highlight CursorLine               guibg=#323300
+  highlight CursorLine                guibg=#323300
 
   " highlight Comment                   guifg=#BC9458 gui=italic
   " highlight SpellBad                  guifg=#990000 guibg=#000000
@@ -66,9 +67,10 @@ if has("gui_running")
   highlight DiffDelete                guifg=#E6E1DC guibg=#660000
 
   highlight rubyBlockParameter        guifg=#FFFFFF
-  highlight rubyClass                 guifg=#FFFFFF
+  highlight rubyClass                 guifg=#CC7833
   highlight rubyConstant              guifg=#DA4939
   highlight rubyInstanceVariable      guifg=#D0D0FF
+  " highlight rubyInstanceVariable      guifg=#809FFE
   highlight rubyInterpolation         guifg=#519F50
   highlight rubyLocalVariableOrMethod guifg=#D0D0FF
   highlight rubyPredefinedConstant    guifg=#DA4939
@@ -80,29 +82,30 @@ if has("gui_running")
   highlight xmlTagName                guifg=#E8BF6A
   highlight xmlEndTag                 guifg=#E8BF6A
 else
-    set t_Co=256
-    highlight Normal ctermfg=White ctermbg=Black
-    highlight Number ctermfg=White ctermbg=Black
-    highlight LineNr ctermfg=DarkGray ctermbg=Black
-    highlight Cursor ctermfg=Black ctermbg=Yellow
-    highlight Keyword ctermfg=202
-    highlight Define ctermfg=202
-    highlight Comment ctermfg=DarkGray
-    highlight Type ctermfg=White
-    highlight rubySymbol ctermfg=66
-    highlight Identifier ctermfg=White
-    highlight rubyClassVariable ctermfg=66
-    highlight rubyStringDelimiter ctermfg=DarkGreen
-    highlight rubyInstanceVariable ctermfg=66
-    highlight rubyInterpolation ctermfg=White
-    highlight rubyPseudoVariable ctermfg=66
-    highlight Constant ctermfg=228
-    highlight Function ctermfg=DarkRed
-    highlight Include ctermfg=DarkRed
-    highlight Statement ctermfg=DarkRed
-    highlight String ctermfg=DarkGreen
-    highlight Search ctermbg=White
-    highlight Todo ctermbg=Black ctermfg=Yellow
-    highlight ModeMsg ctermfg=white ctermbg=DarkGreen
-    highlight NonText ctermfg=DarkGray ctermbg=Black
+  set t_Co=256
+  highlight Visual ctermfg=DarkGray ctermbg=Black
+  highlight Normal ctermfg=White ctermbg=Black
+  highlight Number ctermfg=White ctermbg=Black
+  highlight LineNr ctermfg=DarkGray ctermbg=Black
+  highlight Cursor ctermfg=Black ctermbg=Yellow
+  highlight Keyword ctermfg=202
+  highlight Define ctermfg=202
+  highlight Comment ctermfg=Gray
+  highlight Type ctermfg=White
+  highlight rubySymbol ctermfg=66
+  highlight Identifier ctermfg=White
+  highlight rubyClassVariable ctermfg=66
+  highlight rubyStringDelimiter ctermfg=DarkGreen
+  highlight rubyInstanceVariable ctermfg=66
+  highlight rubyInterpolation ctermfg=White
+  highlight rubyPseudoVariable ctermfg=66
+  highlight Constant ctermfg=228
+  highlight Function ctermfg=DarkRed
+  highlight Include ctermfg=DarkRed
+  highlight Statement ctermfg=DarkRed
+  highlight String ctermfg=DarkGreen
+  highlight Search ctermbg=White
+  highlight Todo ctermbg=Black ctermfg=Yellow
+  highlight ModeMsg ctermfg=white ctermbg=DarkGreen
+  highlight NonText ctermfg=DarkGray ctermbg=Black
 endif
