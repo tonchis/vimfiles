@@ -1,6 +1,6 @@
 call IMAP('""', "\"<++>\"", 'c')
 call IMAP("''", "'<++>'", 'c')
-call IMAP('||', "\|<++>\|", 'c')
 call IMAP('()', "\(<++>\)", 'c')
 call IMAP('[]', "\[<++>\]", 'c')
-call IMAP('{}', "\{<++>\}", 'c')
+call IMAP('{}', "\{\n<++>\n\}", 'c')
+call IMAP('struct--', "typedef\ struct\ <++>\{\n<++>\n\}<++>;", 'c')
