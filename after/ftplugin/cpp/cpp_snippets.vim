@@ -1,0 +1,5 @@
+call IMAP('""', "\"<++>\"", 'cpp')
+call IMAP("''", "'<++>'", 'cpp')
+call IMAP('()', "\(<++>\)", 'cpp')
+call IMAP('[]', "\[<++>\]", 'cpp')
+call IMAP('{}', "\{\n<++>\n\}", 'cpp')
