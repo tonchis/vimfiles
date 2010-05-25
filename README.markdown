@@ -24,6 +24,10 @@ And in your `~/.gvimrc` put this:
 
     source ~/.vim/gvimrc.vim
 
+Finally, you will need to install `curl`
+
+    sudo aptitude install curl
+
 You may want to explore the `~/.vim/config` directory to see what's
 included and `~/.vim/config/mappings.vim` to see how to use the
 available tools.
