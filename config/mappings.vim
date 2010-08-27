@@ -79,7 +79,7 @@ imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
 
 " Open file in new tab, trailing space is added on purpose
-nmap <C-W> :tabe 
+nmap <C-O> :tabe 
 
 " Opens :Vex in tree form.
 map <C-X> :Vex<CR> 3i
