@@ -5,6 +5,8 @@ set ts=2
 " Ruby
 call IMAP('##', '#{}', 'ruby')
 call IMAP('def--', "def <++>\n<++>\nend", 'ruby')
+call IMAP('class--', "class <++>\n<++>\nend", 'ruby')
+call IMAP('module--', "module <++>\n<++>\nend", 'ruby')
 call IMAP('do--', "do\n<++>\nend", 'ruby')
 call IMAP('do --', "do |<++>|\n<++>\nend", 'ruby')
 call IMAP('{--', "{ |<++>| <++> }", 'ruby')
@@ -65,10 +67,9 @@ call IMAP('scenario--', "scenario \"<++>\" do\n<++>\nend", 'ruby')
 call IMAP('setup--', "setup do\n<++>\nend", 'ruby')
 call IMAP('teardown--', "teardown do\n<++>\nend", 'ruby')
 call IMAP('test--', "test \"<++>\" do\n<++>\nend", 'ruby')
-
-" RSpec
 call IMAP('context--', "context \"<++>\" do\n<++>\nend", 'ruby')
 call IMAP('it--', "it \"should <++>\" do\n<++>\nend", 'ruby')
+call IMAP('fast--', "fast_context \"<++>\" do\n<++>\nend", 'ruby')
 
 " Stories with Webrat
 call IMAP('sop--', "save_and_open_page", 'ruby')
