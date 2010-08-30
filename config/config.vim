@@ -35,6 +35,8 @@ hi StatusLine ctermfg=Gray ctermbg=Black
 hi StatusLineNC ctermfg=DarkGray ctermbg=Black
 hi CursorLine cterm=NONE  ctermbg=DarkBlue
 hi MatchParen ctermbg=Black ctermfg=DarkYellow
+hi OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 " Temp files
 set nobackup
