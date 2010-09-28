@@ -57,6 +57,9 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.txt setf asciidoc
 
   " Assembly
-  au BufRead,BufNewFile *.asm,*.ASM,*.inc,*.INC,*.lst,*.LST setf assembly
+  au! BufRead,BufNewFile *.asm,*.ASM,*.inc,*.INC,*.lst,*.LST setf assembly
+
+  " Rsel files
+  au! BufNewFile,BufRead *.rsel setf ruby
 
 augroup END

@@ -81,6 +81,9 @@ imap <C-H> <ESC>ha
 " Open file in new tab, trailing space is added on purpose
 nmap <C-O> :tabe 
 
+" Open file in new vertical split, trailing space is added on purpose
+nmap <C-I> :vs 
+
 " Opens :Vex in tree form.
 map <C-X> :Vex<CR> 3i
 
@@ -89,3 +92,4 @@ map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>
 
 " Opens FuzzyFinder in new tab
 map <C-N> :tabe<CR>:FuzzyFinderTextMate<CR>
+

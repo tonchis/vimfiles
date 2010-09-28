@@ -36,7 +36,7 @@ hi StatusLineNC ctermfg=DarkGray ctermbg=Black
 hi CursorLine cterm=NONE  ctermbg=DarkBlue
 hi MatchParen ctermbg=Black ctermfg=DarkYellow
 hi OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+au BufWinEnter * let w:m2=matchadd('OverLength', '\%>80v.\+', -1)
 
 " Temp files
 set nobackup
