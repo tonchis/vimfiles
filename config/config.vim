@@ -74,6 +74,9 @@ set number
 set incsearch
 set nohlsearch
 
+" Gist options
+let g:gist_open_browser_after_post = 1
+
 " Other files.
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/commenter.vim
