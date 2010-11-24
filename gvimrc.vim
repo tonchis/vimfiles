@@ -7,8 +7,10 @@ set guioptions-=m
 set guioptions+=a
 set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:~:.:h\")})%)
 set winminheight=0
-set guifont=Bitstream\ Vera\ Sans\ Mono:h14
+set guifont=Menlo:h15
 set columns=160 lines=53
+" set guifont=Bitstream\ Vera\ Sans\ Mono:h14
+" set columns=198 lines=64
 
 " Color settings
 color railscasts

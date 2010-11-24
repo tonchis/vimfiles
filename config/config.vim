@@ -77,6 +77,9 @@ set nohlsearch
 " Gist options
 let g:gist_open_browser_after_post = 1
 
+" Netrw tree options
+let g:netrw_liststyle = 3
+
 " Other files.
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/commenter.vim
