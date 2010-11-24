@@ -80,6 +80,14 @@ let g:gist_open_browser_after_post = 1
 " Netrw tree options
 let g:netrw_liststyle = 3
 
+" Bufflist options
+let g:BufferListWidth = 25
+let g:BufferListMaxWidth = 50
+" hi BufferSelected term=reverse ctermfg=white ctermbg=red cterm=bold
+" hi BufferNormal term=NONE ctermfg=black ctermbg=darkcyan cterm=NONE
+hi BufferSelected guifg=darkcyan guibg=black
+hi BufferNormal guifg=white guibg=black
+
 " Other files.
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/commenter.vim

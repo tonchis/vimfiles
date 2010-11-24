@@ -70,10 +70,6 @@ imap <Space> <Space><C-g>u
 " Insert a blank line above and below the current line
 " imap <C-K> <ESC>O
 
-" Moves back and foward one word
-imap <C-B> <ESC>bi
-imap <C-E> <ESC>ea
-
 " Move left and right one word
 imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
@@ -90,6 +86,5 @@ map <C-X> :Vex<CR> 3i
 " Run git blame in the current file and display results in the preview window.
 map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>
 
-" Opens FuzzyFinder in new tab
-map <C-N> :tabe<CR>:FuzzyFinderTextMate<CR>
-
+" Opens BufferList
+map <C-B> :call BufferList()<CR>
