@@ -40,9 +40,6 @@ call IMAP('fast--', "fast_context \"<++>\" do\n<++>\nend", 'ruby')
 " Stories with Webrat
 call IMAP('sop--', "save_and_open_page", 'ruby')
 
-" Global imaps.
-call IMAP(',,', "``", '')
-
 " Sinatra
 call IMAP('get--', "get '<++>' do\n<++>\nend" , 'ruby')
 call IMAP('post--', "post '<++>' do\n<++>\nend" , 'ruby')

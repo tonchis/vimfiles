@@ -1,8 +1,3 @@
-call IMAP('""', "\"<++>\"", 'markdown')
-call IMAP("''", "'<++>'", 'markdown')
-call IMAP('()', "\(<++>\)", 'markdown')
-call IMAP('[]', "\[<++>\]", 'markdown')
-call IMAP('{}', "\{<++>\}", 'markdown')
+source ~/.vim/after/ftplugin/global_snippets.vim
 
-" Global imaps.
 call IMAP(',,', "`<++>`", '')
