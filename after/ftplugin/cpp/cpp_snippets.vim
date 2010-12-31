@@ -1,5 +1,1 @@
-call IMAP('""', "\"<++>\"", 'cpp')
-call IMAP("''", "'<++>'", 'cpp')
-call IMAP('()', "\(<++>\)", 'cpp')
-call IMAP('[]', "\[<++>\]", 'cpp')
-call IMAP('{}', "\{\n<++>\n\}", 'cpp')
+source ~/.vim/after/ftplugin/global_snippets.vim

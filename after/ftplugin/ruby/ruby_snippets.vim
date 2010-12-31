@@ -1,3 +1,5 @@
+source ~/.vim/after/ftplugin/global_snippets.vim
+
 set et
 set sw=2
 set ts=2
@@ -11,11 +13,6 @@ call IMAP('do--', "do\n<++>\nend", 'ruby')
 call IMAP('do --', "do |<++>|\n<++>\nend", 'ruby')
 call IMAP('{--', "{|<++>| <++>}", 'ruby')
 call IMAP('deb--', "debugger", 'ruby')
-call IMAP('""', "\"<++>\"", 'ruby')
-call IMAP("''", "'<++>'", 'ruby')
-call IMAP('()', "\(<++>\)", 'ruby')
-call IMAP('[]', "\[<++>\]", 'ruby')
-call IMAP('{}', "\{<++>\}", 'ruby')
 call IMAP('//', "\/<++>\/", 'ruby')
 call IMAP(':--', "\:<++> => <++>", 'ruby')
 
@@ -45,3 +42,10 @@ call IMAP('sop--', "save_and_open_page", 'ruby')
 
 " Global imaps.
 call IMAP(',,', "``", '')
+
+" Sinatra
+call IMAP('get--', "get '<++>' do\n<++>\nend" , 'ruby')
+call IMAP('post--', "post '<++>' do\n<++>\nend" , 'ruby')
+call IMAP('put--', "put '<++>' do\n<++>\nend" , 'ruby')
+call IMAP('delete--', "delete '<++>' do\n<++>\nend" , 'ruby')
+

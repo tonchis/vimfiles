@@ -1,3 +1,5 @@
+source ~/.vim/after/ftplugin/global_snippets.vim
+
 " set noet
 set sw=2
 set ts=2
@@ -6,12 +8,6 @@ set ts=2
 call IMAP('##', '#{<++>}', 'haml')
 call IMAP('do-', "do |<++>|\n  <++>\r", 'haml')
 call IMAP('{--', "{|<++>| <++>}", 'haml')
-call IMAP('""', "\"<++>\"", 'haml')
-call IMAP("''", "'<++>'", 'haml')
-call IMAP('||', "\|<++>\|", 'haml')
-call IMAP('()', "\(<++>\)", 'haml')
-call IMAP('[]', "\[<++>\]", 'haml')
-call IMAP('{}', "\{<++>\}", 'haml')
 call IMAP(':--', "\:<++> => <++>", 'haml')
 
 " HTML
