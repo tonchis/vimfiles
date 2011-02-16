@@ -7,14 +7,15 @@ set ts=2
 " Ruby
 call IMAP('##', '#{<++>}', 'ruby')
 call IMAP('def--', "def <++>\n<++>\nend", 'ruby')
-call IMAP('class--', "class <++>\n<++>\nend", 'ruby')
-call IMAP('module--', "module <++>\n<++>\nend", 'ruby')
+call IMAP('class--', "class <++>\n<++>\nend\n", 'ruby')
+call IMAP('module--', "module <++>\n<++>\nend\n", 'ruby')
 call IMAP('do--', "do\n<++>\nend", 'ruby')
 call IMAP('do --', "do |<++>|\n<++>\nend", 'ruby')
 call IMAP('{--', "{|<++>| <++>}", 'ruby')
 call IMAP('deb--', "debugger", 'ruby')
 call IMAP('//', "\/<++>\/", 'ruby')
 call IMAP(':--', "\:<++> => <++>", 'ruby')
+call IMAP('case--', "case <++>\nwhen <++>\nend",'ruby')
 
 " Rails > Logger
 call IMAP('log--', "logger.info \"[DEBUG-FLAG] <++>\"", 'ruby')
@@ -34,11 +35,9 @@ call IMAP('setup--', "setup do\n<++>\nend", 'ruby')
 call IMAP('teardown--', "teardown do\n<++>\nend", 'ruby')
 call IMAP('test--', "test \"<++>\" do\n<++>\nend", 'ruby')
 call IMAP('context--', "context \"<++>\" do\n<++>\nend", 'ruby')
-call IMAP('it--', "it \"should <++>\" do\n<++>\nend", 'ruby')
-call IMAP('fast--', "fast_context \"<++>\" do\n<++>\nend", 'ruby')
-
-" Stories with Webrat
-call IMAP('sop--', "save_and_open_page", 'ruby')
+call IMAP('before--', "before \"<++>\" do\n<++>\nend", 'ruby')
+call IMAP('desc--', "describe <++> do\n<++>\nend", 'ruby')
+call IMAP('it--', "it \"<++>\" do\n<++>\nend", 'ruby')
 
 " Sinatra
 call IMAP('get--', "get '<++>' do\n<++>\nend" , 'ruby')
