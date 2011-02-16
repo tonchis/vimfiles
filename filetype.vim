@@ -43,6 +43,9 @@ augroup filetypedetect
   " Sass files
   au! BufNewFile,BufRead *.sass setf sass
 
+  " Scss files
+  au! BufNewFile,BufRead *.scss setf scss
+
   " Shiny files
   au! BufNewFile,BufRead *.s setf shiny
 
