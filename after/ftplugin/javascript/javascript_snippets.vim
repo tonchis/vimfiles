@@ -6,6 +6,7 @@ set ts=2
 
 call IMAP('$$', "\$\(<++>\)", 'javascript')
 call IMAP("log-", "console.log('<++>')", 'javascript')
-call IMAP('{}', "\{\n<++>\n\}", 'javascript')
-call IMAP('fun--', "function(<++>){\n<++>\n\};", 'javascript')
+call IMAP('{}', "\{<++>\}", 'javascript')
+call IMAP('{--}', "\{\n<++>\n\}", 'javascript')
+call IMAP('f--', "function(<++>){\n<++>\n\}<++>", 'javascript')
 
