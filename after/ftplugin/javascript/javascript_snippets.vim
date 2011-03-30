@@ -9,4 +9,5 @@ call IMAP("log-", "console.log('<++>')", 'javascript')
 call IMAP('{}', "\{<++>\}", 'javascript')
 call IMAP('{--}', "\{\n<++>\n\}", 'javascript')
 call IMAP('f--', "function(<++>){\n<++>\n\}<++>", 'javascript')
+call IMAP('if', "if(<++>){\n<++>\n\}<++>", 'javascript')
 
