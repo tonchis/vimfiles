@@ -102,3 +102,6 @@ source ~/.vim/config/execute-test.vim
 source ~/.vim/config/tab-autocomplete.vim
 source ~/.vim/config/imap-snippets.vim
 source ~/.vim/config/preview-results.vim
+
+" CommandT source.
+source ~/.vim/bundle/Command-T/plugin/command-t.vim
