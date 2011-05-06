@@ -74,11 +74,11 @@ imap <Space> <Space><C-g>u
 imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
 
-" Open CommandT
-nmap <C-O> :CommandT<CR>
+" Open CommandT in new tab.
+nmap <C-O> :tabe<CR>:CommandT<CR>
 
-" Open file in new vertical split, trailing space is added on purpose
-nmap <C-I> :vs 
+" Open CommandT in vertical split.
+nmap <C-I> :vs<CR>:CommandT<CR>
 
 " Opens :Vex in tree form.
 map <C-X> :Vex<CR> 3i
