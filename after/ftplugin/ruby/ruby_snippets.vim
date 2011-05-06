@@ -35,7 +35,7 @@ call IMAP('setup--', "setup do\n<++>\nend", 'ruby')
 call IMAP('teardown--', "teardown do\n<++>\nend", 'ruby')
 call IMAP('test--', "test \"<++>\" do\n<++>\nend", 'ruby')
 call IMAP('context--', "context \"<++>\" do\n<++>\nend", 'ruby')
-call IMAP('before--', "before \"<++>\" do\n<++>\nend", 'ruby')
+call IMAP('before--', "before do\n<++>\nend", 'ruby')
 call IMAP('desc--', "describe <++> do\n<++>\nend", 'ruby')
 call IMAP('it--', "it \"<++>\" do\n<++>\nend", 'ruby')
 

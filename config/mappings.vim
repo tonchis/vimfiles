@@ -74,8 +74,8 @@ imap <Space> <Space><C-g>u
 imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
 
-" Open file in new tab, trailing space is added on purpose
-nmap <C-O> :tabe 
+" Open CommandT
+nmap <C-O> :CommandT<CR>
 
 " Open file in new vertical split, trailing space is added on purpose
 nmap <C-I> :vs 
@@ -84,7 +84,7 @@ nmap <C-I> :vs
 map <C-X> :Vex<CR> 3i
 
 " Run git blame in the current file and display results in the preview window.
-map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>
+map <C-G> :Gblame<CR>
 
 " Opens BufferList
 map <C-B> :call BufferList()<CR>
