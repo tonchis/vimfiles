@@ -88,3 +88,4 @@ map <C-G> :Gblame<CR>
 
 " Opens BufferList
 map <C-B> :call BufferList()<CR>
+map <S-C-B> :CommandTBuffer<CR>
