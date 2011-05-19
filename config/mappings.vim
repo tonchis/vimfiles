@@ -1,23 +1,27 @@
-" Open scratch files for Ruby (F1) and Mo (S-F1)
-map <F1> :tabnew $HOME/Code/Samples/ruby.rb<CR>:tabm 0<CR>
-map <S-F1> :tabnew $HOME/Code/Samples/mo.mo<CR>:tabm 0<CR>
-
 " Source current file
-map <F2> :source %<CR>
+map <F1> :source %<CR>
 
-" Open tasks
-map <F3> :tabnew $HOME/.taskpaper<CR>:tabm 0<CR>
+" Reload CommandT
+map <F2> :CommandTFlush<CR>
+
+map <F3> <Nop>
 
 " Toggle spell
 map <F4> <ESC>:set spell!<CR>
 imap <F4> <ESC>:set spell!<CR>
 
+map <F5> <Nop>
+
 " Execute files with Ruby 1.9
 map <F6> <ESC>:w!<CR>:!ruby1.9 %<CR>
 map <S-F6> <ESC>:w!<CR>:!ruby1.9 -c %<CR>
 
+map <F7> <Nop>
+
 " Format selection with par
 vmap <F8> :!par<CR>
+
+map <F9> <Nop>
 
 " Toggle search highlight
 map <F10> :set hlsearch!<CR>
@@ -25,6 +29,8 @@ imap <F10> <ESC>:set hlsearch!<CR>a
 
 " Handle trailing whitespaces and tabs.
 map <F11> <ESC>:%s/\s*$//g<CR>:%s/\t/  /<CR>
+
+map <F12> <Nop>
 
 " Start and stop the webserver
 map <Leader>start <ESC>:!thin start -R config.ru -d<CR>
