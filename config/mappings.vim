@@ -4,7 +4,7 @@ map <F1> :source %<CR>
 " Reload CommandT
 map <F2> :CommandTFlush<CR>
 
-map <F3> <Nop>
+map <F3> :CommandT<CR>
 
 " Toggle spell
 map <F4> <ESC>:set spell!<CR>

@@ -21,6 +21,7 @@ call IMAP('case--', "case <++>\nwhen <++>\nend",'ruby')
 call IMAP('log--', "logger.info \"[DEBUG-FLAG] <++>\"", 'ruby')
 call IMAP('rdl', "RAILS_DEFAULT_LOGGER.fatal \"[DEBUG-FLAG] <++> #{<++>}\"", 'ruby')
 call IMAP('puts--', "puts \"[DEBUG-FLAG] <++> #{<++>}\"", 'ruby')
+call IMAP('.efm--', ".errors.full_messages", 'ruby')
 
 " Quick samples
 call IMAP('array--', "[1, 2, 3, 4, 5]", 'ruby')
