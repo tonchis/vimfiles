@@ -93,7 +93,8 @@ syn match rubyFloat  "\<\%(0\|[1-9]\d*\%(_\d\+\)*\)\%(\.\d\+\%(_\d\+\)*\)\=\%([e
 syn match rubyLocalVariableOrMethod "\<[_[:lower:]][_[:alnum:]]*[?!=]\=" contains=NONE display transparent
 syn match rubyBlockArgument      "&[_[:lower:]][_[:alnum:]]"     contains=NONE display transparent
 
-syn match  rubyConstant      "\%(\%([.@$]\@<!\.\)\@<!\<\|::\)\_s*\zs\u\w*\%(\>\|::\)\@=\%(\s*(\)\@!"
+syn match  rubyConstant          "\%(\%([.@$]\@<!\.\)\@<!\<\|::\)\_s*\zs\%(\u\l\+\)*\%(\>\|::\)\@=\%(\s*(\)\@!"
+syn match  rubyUppercaseConstant "\%(\%([.@$]\@<!\.\)\@<!\<\|::\)\_s*\zs\u*\%(\>\|::\)\@=\%(\s*(\)\@!"
 syn match  rubyClassVariable    "@@\h\w*" display
 syn match  rubyInstanceVariable    "@\h\w*"  display
 syn match  rubyGlobalVariable    "$\%(\h\w*\|-.\)"
