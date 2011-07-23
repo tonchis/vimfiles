@@ -26,15 +26,35 @@ if has("gui_running")
   hi link htmlTagName                 xmlTagName
   hi link htmlEndTag                  xmlEndTag
 
+  "
+  " General higlight configuration. See :help highlight
+  "
   " Colors for the menu when autocompleting
   highlight PmenuSel                  guibg=#554433
   highlight PMenu                     guifg=#444444 guibg=#FEE3B6 gui=none
-
-  highlight Normal                    guifg=#E6E1DC guibg=#090909
+  " highlight Normal                    guifg=#E6E1DC guibg=#090909
+  highlight Normal                    guifg=#E6E1DC guibg=#101010
+  " highlight NonText                   guifg=#333333 guibg=#000000
+  highlight NonText                   guifg=#333333 guibg=#101010
   highlight Cursor                    guifg=#000000 guibg=#FFFFFF
-  highlight NonText                   guifg=#333333 guibg=#000000
   highlight CursorLine                guibg=#323300
+  " highlight LineNr                    guifg=#2B2B2B guibg=#000000
+  highlight LineNr                    guifg=#8E8E8E guibg=#1A1A1A
+  highlight Search                    guibg=#FFFF00
+  highlight Title                     guifg=#FFFFFF
+  " highlight Visual                    guibg=#181818 guifg=#A7B3D3
+  highlight Visual                    guibg=#45484B
+  highlight Folded                    guifg=#666666 guibg=#111111
+  highlight VertSplit                 guifg=#202020 guibg=#2B2B2B gui=NONE   ctermfg=darkgray ctermbg=darkgray cterm=NONE
+  highlight StatusLine                guifg=#CCCCCC guibg=#2B2B2B gui=italic ctermfg=white    ctermbg=darkgray cterm=NONE
+  highlight StatusLineNC              guifg=#000000 guibg=#2B2B2B gui=NONE   ctermfg=blue     ctermbg=darkgray cterm=NONE
+  highlight DiffAdd                   guifg=#E6E1DC guibg=#144212
+  highlight DiffDelete                guifg=#E6E1DC guibg=#660000
+  highlight OverLength                guibg=#592929 ctermbg=red   ctermfg=white
 
+  "
+  " Ruby specific highlighting.
+  "
   " highlight Comment                   guifg=#BC9458 gui=italic
   " highlight SpellBad                  guifg=#990000 guibg=#000000
   highlight Comment                   guifg=#666666 gui=italic
@@ -45,38 +65,28 @@ if has("gui_running")
   highlight Identifier                guifg=#6D9CBE gui=NONE
   highlight Include                   guifg=#CC7833 gui=NONE
   highlight Keyword                   guifg=#CC7833
-  highlight LineNr                    guifg=#2B2B2B guibg=#000000
   highlight Number                    guifg=#A5C261
   " highlight Number                    guifg=#6D9CBE gui=NONE
   highlight PreProc                   guifg=#E6E1DC
-  highlight Search                    guibg=#FFFF00
   highlight Statement                 guifg=#CC7833 gui=NONE
+  " highlight String                    guifg=#929E7A
   highlight String                    guifg=#A5C261
-  highlight Title                     guifg=#FFFFFF
   highlight Todo                      guibg=#000000 guifg=#996600 gui=italic
   highlight Type                      guifg=#DA4939 gui=NONE
-  " highlight Visual                    guibg=#5A647E
-  highlight Visual                    guibg=#181818 guifg=#A7B3D3
-  highlight Folded                    guifg=#666666 guibg=#111111
-
-  highlight VertSplit                 guifg=#202020 guibg=#202020 gui=NONE   ctermfg=darkgray ctermbg=darkgray cterm=NONE
-  highlight StatusLine                guifg=#CCCCCC guibg=#202020 gui=italic ctermfg=white    ctermbg=darkgray cterm=NONE
-  highlight StatusLineNC              guifg=#000000 guibg=#202020 gui=NONE   ctermfg=blue     ctermbg=darkgray cterm=NONE
-
-  highlight DiffAdd                   guifg=#E6E1DC guibg=#144212
-  highlight DiffDelete                guifg=#E6E1DC guibg=#660000
 
   highlight rubyBlockParameter        guifg=#FFFFFF
   highlight rubyClass                 guifg=#CC7833
   highlight rubyConstant              guifg=#DA4939
-  highlight rubyInstanceVariable      guifg=#D0D0FF
   " highlight rubyInstanceVariable      guifg=#809FFE
+  highlight rubyInstanceVariable      guifg=#D0D0FF
   highlight rubyInterpolation         guifg=#519F50
   highlight rubyLocalVariableOrMethod guifg=#D0D0FF
   highlight rubyPredefinedConstant    guifg=#DA4939
   highlight rubyPseudoVariable        guifg=#FFC66D
+  " highlight rubyStringDelimiter       guifg=#929E7A
   highlight rubyStringDelimiter       guifg=#A5C261
-  highlight rubySymbol                guifg=#A5C261
+  " highlight rubySymbol                guifg=#CB795F
+  highlight rubySymbol                guifg=#96573C
 
   highlight xmlTag                    guifg=#E8BF6A
   highlight xmlTagName                guifg=#E8BF6A
