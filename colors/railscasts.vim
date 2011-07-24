@@ -77,7 +77,7 @@ if has("gui_running")
   highlight rubyBlockParameter        guifg=#FFFFFF
   highlight rubyClass                 guifg=#CC7833
   highlight rubyConstant              guifg=#DA4939
-  highlight rubyUppercaseConstant     guifg=#95A1B1
+  highlight rubyUppercaseConstant     guifg=#B24700
   " highlight rubyInstanceVariable      guifg=#809FFE
   highlight rubyInstanceVariable      guifg=#D0D0FF
   highlight rubyInterpolation         guifg=#519F50
@@ -87,7 +87,7 @@ if has("gui_running")
   " highlight rubyStringDelimiter       guifg=#929E7A
   highlight rubyStringDelimiter       guifg=#A5C261
   " highlight rubySymbol                guifg=#CB795F
-  highlight rubySymbol                guifg=#FEB380
+  highlight rubySymbol                guifg=#7493AF
 
   highlight xmlTag                    guifg=#E8BF6A
   highlight xmlTagName                guifg=#E8BF6A
