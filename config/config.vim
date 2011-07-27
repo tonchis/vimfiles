@@ -79,6 +79,9 @@ set number
 set incsearch
 set nohlsearch
 
+" Maximize Vim when entering fullscreen
+set fuoptions=maxvert,maxhorz
+
 " Gist options
 let g:gist_open_browser_after_post = 1
 
