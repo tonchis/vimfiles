@@ -107,5 +107,5 @@ else
   hi rubyInterpolation    ctermfg=White
   hi rubyPseudoVariable   ctermfg=66
   hi rubyStringDelimiter  ctermfg=DarkGreen
-  hi rubySymbol ctermfg=66
+  hi rubySymbol           ctermfg=66
 endif
