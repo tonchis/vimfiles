@@ -74,38 +74,47 @@ else
   "
   " General highlighting configuration. See :help highlight
   "
-  hi Normal       ctermfg=White    ctermbg=Black
-  hi NonText      ctermfg=DarkGray ctermbg=Black
-  hi Cursor       ctermfg=Black    ctermbg=Yellow
-  hi LineNr       ctermfg=DarkGray ctermbg=Black
-  hi Search       ctermbg=White
-  hi Visual       ctermfg=DarkGray ctermbg=Black
-  hi VertSplit    ctermfg=darkgray ctermbg=darkgray cterm=NONE
-  hi StatusLine   ctermfg=white    ctermbg=darkgray cterm=NONE
-  hi StatusLineNC ctermfg=blue     ctermbg=darkgray cterm=NONE
-  hi OverLength   ctermbg=red      ctermfg=white
-  hi ModeMsg      ctermfg=white    ctermbg=DarkGreen
+  hi Normal       ctermfg=254 ctermbg=232
+  hi NonText      ctermfg=254 ctermbg=232
+  hi StatusLine   ctermfg=250 ctermbg=237 cterm=NONE
+  hi StatusLineNC ctermfg=233 ctermbg=237 cterm=NONE
+  hi TabLineFill              ctermbg=245
+  hi TabLine      ctermfg=233 ctermbg=250 cterm=NONE
+  hi TabLineSel   ctermfg=250 ctermbg=233 cterm=bold
+  hi LineNr       ctermfg=250 ctermbg=233
+  hi VertSplit                ctermbg=237 cterm=NONE
+  hi Cursor       ctermfg=0   ctermbg=255
+  hi CursorLine                           cterm=NONE
+  hi Search                   ctermbg=255
+  hi Visual       ctermfg=250 ctermbg=234
+  hi OverLength               ctermbg=52
+  hi ModeMsg      ctermfg=255 ctermbg=DarkGreen
+  hi MatchParen   ctermbg=0   ctermfg=DarkYellow
 
   "
   " Ruby specific highlighting.
   "
-  hi Comment    ctermfg=Gray
-  hi Constant   ctermfg=228
-  hi Define     ctermfg=202
-  hi Function   ctermfg=DarkRed
+  hi Comment    ctermfg=250
+  hi Constant   ctermfg=166
+  hi Define     ctermfg=166
+  hi Keyword    ctermfg=166
+  hi Function   ctermfg=214
   hi Identifier ctermfg=White
-  hi Include    ctermfg=DarkRed
-  hi Keyword    ctermfg=202
-  hi Number     ctermfg=White    ctermbg=Black
-  hi Statement  ctermfg=DarkRed
-  hi String     ctermfg=DarkGreen
+  hi Include    ctermfg=166
+  hi Number     ctermfg=66
+  hi Statement  ctermfg=166
+  hi String     ctermfg=64
   hi Todo       ctermbg=Black    ctermfg=Yellow
   hi Type       ctermfg=White
 
-  hi rubyClassVariable    ctermfg=66
-  hi rubyInstanceVariable ctermfg=66
-  hi rubyInterpolation    ctermfg=White
-  hi rubyPseudoVariable   ctermfg=66
-  hi rubyStringDelimiter  ctermfg=DarkGreen
-  hi rubySymbol           ctermfg=66
+  hi rubyClass             ctermfg=166
+  hi rubyClassVariable     ctermfg=39
+  hi rubyInstanceVariable  ctermfg=81
+  hi rubyInterpolation     ctermfg=66
+  hi rubyInterpolationDelimiter ctermfg=130
+  hi rubyPseudoVariable    ctermfg=166
+  hi rubyStringDelimiter   ctermfg=64
+  hi rubySymbol            ctermfg=68
+  hi rubyConstant          ctermfg=124 cterm=bold
+  hi rubyUppercaseConstant ctermfg=138 cterm=bold
 endif

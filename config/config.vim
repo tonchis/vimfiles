@@ -33,14 +33,7 @@ set laststatus=2
 " Cursor line
 set cursorline
 
-" Highlights
-hi TabLine cterm=bold ctermfg=Black ctermbg=DarkGray
-hi TabLineFill cterm=bold ctermfg=Black ctermbg=DarkGray
-hi TabLineSel cterm=NONE ctermfg=White ctermbg=DarkRed
-hi StatusLine ctermfg=Gray ctermbg=Black
-hi StatusLineNC ctermfg=DarkGray ctermbg=Black
-hi CursorLine cterm=NONE  ctermbg=DarkBlue
-hi MatchParen ctermbg=Black ctermfg=DarkYellow
+" Match lines over 80 columns with OverLength group.
 au BufWinEnter * let w:m2=matchadd('OverLength', '\%>80v.\+', -1)
 
 " Temp files
