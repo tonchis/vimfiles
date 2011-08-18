@@ -78,7 +78,7 @@ if has("gui_running")
 endif
 
 " Gist options
-let g:gist_open_browser_after_post = 1
+let g:gist_clip_command = 'pbcopy'
 
 " Netrw tree options
 let g:netrw_liststyle = 3
