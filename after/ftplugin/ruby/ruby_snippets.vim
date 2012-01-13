@@ -39,10 +39,11 @@ call IMAP('context--', "context \"<++>\" do\n<++>\nend", 'ruby')
 call IMAP('before--', "before do\n<++>\nend", 'ruby')
 call IMAP('desc--', "describe <++> do\n<++>\nend", 'ruby')
 call IMAP('it--', "it \"<++>\" do\n<++>\nend", 'ruby')
+call IMAP('saop--', "save_and_open_page", 'ruby')
 
 " Sinatra
-call IMAP('get--', "get '<++>' do\n<++>\nend" , 'ruby')
-call IMAP('post--', "post '<++>' do\n<++>\nend" , 'ruby')
-call IMAP('put--', "put '<++>' do\n<++>\nend" , 'ruby')
-call IMAP('delete--', "delete '<++>' do\n<++>\nend" , 'ruby')
+call IMAP('get--', "get <++> do\n<++>\nend" , 'ruby')
+call IMAP('post--', "post <++> do\n<++>\nend" , 'ruby')
+call IMAP('put--', "put <++> do\n<++>\nend" , 'ruby')
+call IMAP('delete--', "delete <++> do\n<++>\nend" , 'ruby')
 

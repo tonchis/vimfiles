@@ -21,7 +21,7 @@ map <F7> <Nop>
 " Format selection with par
 vmap <F8> :!par<CR>
 
-map <F9> :!rsync % so:~/simulsched<CR><CR>
+map <F9> :!rsync % so:~/scrabel/%<CR><CR>
 
 " Toggle search highlight
 map <F10> :set hlsearch!<CR>
