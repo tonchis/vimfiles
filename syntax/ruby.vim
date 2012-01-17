@@ -244,7 +244,7 @@ if !exists("b:ruby_no_expensive") && !exists("ruby_no_expensive")
 
 else
   syn match   rubyControl "\<def\>[?!]\@!"  nextgroup=rubyMethodDeclaration skipwhite skipnl
-  syn match   rubyControl "\<class\>[?!]\@!"  nextgroup=rubyClassDeclaration  skipwhite skipnl
+  syn match   rubyControl "\<class\>[:?!]\@!"  nextgroup=rubyClassDeclaration  skipwhite skipnl
   syn match   rubyControl "\<module\>[?!]\@!"  nextgroup=rubyModuleDeclaration skipwhite skipnl
   syn match   rubyControl "\<\%(case\|begin\|do\|for\|if\|unless\|while\|until\|else\|elsif\|ensure\|then\|when\|end\)\>[?!]\@!"
   syn match   rubyKeyword "\<\%(alias\|undef\)\>[?!]\@!"
