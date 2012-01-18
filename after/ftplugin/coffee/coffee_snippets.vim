@@ -8,6 +8,5 @@ call IMAP('$$', "\$\(<++>\)", 'coffee')
 call IMAP("log--", "console.log <++>", 'coffee')
 call IMAP('{}', "\{<++>\}", 'coffee')
 call IMAP('{--}', "\{\n<++>\n\}", 'coffee')
-call IMAP('->', "<++> \->\n<++>", 'coffee')
-" call IMAP('if--', "if(<++>){\n<++>\n\}<++>", 'coffee')
+call IMAP('->', "<++>\->\n\t<++>\n", 'coffee')
 
