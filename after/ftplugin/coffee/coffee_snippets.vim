@@ -13,3 +13,7 @@ call IMAP('()->', "(<++>) ->", 'coffee')
 call IMAP('=>', "<++>\=>\n<++>\n", 'coffee')
 call IMAP('()=>', "(<++>) =>", 'coffee')
 
+" Snippets for Jasmine.
+call IMAP('desc--', "describe \"<++>\", ->\n<++>", 'coffee')
+call IMAP('it--', "it \"<++>\", ->\n<++>", 'coffee')
+
