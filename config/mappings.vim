@@ -3,7 +3,7 @@ map <F1> :source %<CR>
 
 " Reload CommandT
 map <F2> :CommandTFlush<CR>
-
+" Open CommandT
 map <F3> :CommandT<CR>
 
 " Toggle spell
@@ -33,15 +33,15 @@ map <F11> <ESC>:%s/\s*$//g<CR>:%s/\t/  /<CR>
 map <F12> <Nop>
 
 " Start and stop the webserver
-map <Leader>start <ESC>:!thin start -R config.ru -d<CR>
-map <Leader>stop  <ESC>:!thin stop<CR>
+" map <Leader>start <ESC>:!thin start -R config.ru -d<CR>
+" map <Leader>stop  <ESC>:!thin stop<CR>
 
 " Add magic comment for encoding
-nmap <Leader>enc :set paste<CR>ggi# encoding: UTF-8<CR><CR><ESC>:set nopaste<CR>
+" nmap <Leader>enc :set paste<CR>ggi# encoding: UTF-8<CR><CR><ESC>:set nopaste<CR>
 
 " Open file under the cursor in new tab
-map gf :tabe! <cfile><CR>
-map gF :w! /tmp/spec.results<CR><C-W>gF<CR>
+" map gf :tabe! <cfile><CR>
+" map gF :w! /tmp/spec.results<CR><C-W>gF<CR>
 
 " Go to mark at the colum where the mark was set
 map ' `
@@ -60,7 +60,7 @@ imap <2-MiddleMouse> <Nop>
 " map q <Nop>
 
 " Deactivate keyword lookup
-" map K <Nop>
+map K <Nop>
 
 " After a repeat operation, go back to the first character of the previously changed or yanked text
 nmap . .`[
@@ -82,7 +82,6 @@ imap <C-H> <ESC>ha
 
 " Open CommandT in new tab.
 nmap <C-O> :tabe<CR>:CommandT<CR>
-
 " Open CommandT in vertical split.
 nmap <C-I> :vs<CR>:CommandT<CR>
 
@@ -90,8 +89,7 @@ nmap <C-I> :vs<CR>:CommandT<CR>
 map <C-X> :Vex<CR> 3i
 
 " Run git blame in the current file and display results in the preview window.
-map <C-G> :Gblame<CR>
+map <C-g> :Gblame<CR>
 
 " Opens BufferList
-map <C-B> :call BufferList()<CR>
-map <S-C-B> :CommandTBuffer<CR>
+map <C-b> :call BufferList()<CR>
