@@ -39,6 +39,7 @@ call IMAP('context--', "context \"<++>\" do\n<++>\nend", 'ruby')
 call IMAP('before--', "before do\n<++>\nend", 'ruby')
 call IMAP('desc--', "describe <++> do\n<++>\nend", 'ruby')
 call IMAP('it--', "it \"<++>\" do\n<++>\nend", 'ruby')
+call IMAP('let--', "let(<++>) do\n<++>\nend", 'ruby')
 call IMAP('saop--', "save_and_open_page", 'ruby')
 
 " Sinatra

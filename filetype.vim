@@ -53,7 +53,7 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.taskpaper setf taskpaper
 
   " Thor files
-  au! BufNewFile,BufRead *.thor,Thorfile,Rakefile,Guardfile setf ruby
+  au! BufNewFile,BufRead *.thor,Thorfile,Rakefile,Guardfile,*.prawn setf ruby
 
   " AsciiDoc
   au! FileType markdown,asciidoc setlocal spell
