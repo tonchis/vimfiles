@@ -65,4 +65,7 @@ augroup filetypedetect
   " Rsel files
   au! BufNewFile,BufRead *.rsel setf ruby
 
+  " Rsel files
+  au! BufNewFile,BufRead *.citrus setf citrus
+
 augroup END
