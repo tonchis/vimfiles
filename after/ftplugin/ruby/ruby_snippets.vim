@@ -41,6 +41,7 @@ call IMAP('desc--', "describe <++> do\n<++>\nend", 'ruby')
 call IMAP('it--', "it \"<++>\" do\n<++>\nend", 'ruby')
 call IMAP('let--', "let(<++>) do\n<++>\nend", 'ruby')
 call IMAP('saop--', "save_and_open_page", 'ruby')
+call IMAP('screen--', "page.driver.render(\"screenshot.png\")", 'ruby')
 
 " Sinatra
 call IMAP('get--', "get <++> do\n<++>\nend" , 'ruby')
@@ -48,3 +49,5 @@ call IMAP('post--', "post <++> do\n<++>\nend" , 'ruby')
 call IMAP('put--', "put <++> do\n<++>\nend" , 'ruby')
 call IMAP('delete--', "delete <++> do\n<++>\nend" , 'ruby')
 
+" Cuba
+call IMAP('on--', "on <++> do\n<++>\nend" , 'ruby')

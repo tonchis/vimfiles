@@ -33,8 +33,8 @@ set laststatus=2
 " Cursor line
 set cursorline
 
-" Match lines over 80 columns with OverLength group.
-au BufWinEnter * let w:m2=matchadd('OverLength', '\%>80v.\+', -1)
+" Match lines over 100 columns with OverLength group.
+au BufWinEnter * let w:m2=matchadd('OverLength', '\%>100v.\+', -1)
 
 " Temp files
 set nobackup
