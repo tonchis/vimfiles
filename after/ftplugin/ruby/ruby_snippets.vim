@@ -17,16 +17,6 @@ call IMAP('//', "\/<++>\/", 'ruby')
 call IMAP(':--', "\:<++> => <++>", 'ruby')
 call IMAP('case--', "case <++>\nwhen <++>\nend",'ruby')
 
-" Rails > Logger
-call IMAP('log--', "logger.info \"[DEBUG-FLAG] <++>\"", 'ruby')
-call IMAP('rdl', "RAILS_DEFAULT_LOGGER.fatal \"[DEBUG-FLAG] <++> #{<++>}\"", 'ruby')
-call IMAP('puts--', "puts \"[DEBUG-FLAG] <++> #{<++>}\"", 'ruby')
-call IMAP('.efm--', ".errors.full_messages", 'ruby')
-
-" Quick samples
-call IMAP('array--', "[1, 2, 3, 4, 5]", 'ruby')
-call IMAP('hash--', '{ "a" => 1, "b" => 2, "c" => 3 }', 'ruby')
-
 " Tests
 call IMAP('Test--', "class Test<++> < Test::Unit::TestCase\n<++>\nend", 'ruby')
 call IMAP('should--', "should \"<++>\" do\n<++>\nend", 'ruby')
