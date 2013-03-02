@@ -2,7 +2,7 @@
 runtime macros/matchit.vim
 
 " Pathogen
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
 
 " Basic settings
 syntax on
