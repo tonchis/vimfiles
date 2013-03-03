@@ -80,9 +80,6 @@ endif
 " Gist options
 let g:gist_clip_command = 'pbcopy'
 
-" Netrw tree options
-let g:netrw_liststyle = 3
-
 " Bufflist options
 let g:BufferListWidth = 25
 let g:BufferListMaxWidth = 50
