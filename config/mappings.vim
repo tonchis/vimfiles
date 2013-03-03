@@ -84,12 +84,5 @@ imap <C-H> <ESC>ha
 nmap <C-O> :tabe<CR>:CommandT<CR>
 " Open CommandT in vertical split.
 nmap <C-I> :vs<CR>:CommandT<CR>
-
-" Opens :Vex in tree form.
-map <C-X> :Vex<CR> 3i
-
-" Run git blame in the current file and display results in the preview window.
-map <C-g> :Gblame<CR>
-
-" Opens BufferList
-map <C-b> :call BufferList()<CR>
+" Opens CommandT buffer list
+map <C-b> :CommandTBuffer<CR>
