@@ -79,6 +79,8 @@ endif
 
 " Gist options
 let g:gist_clip_command = 'pbcopy'
+let g:gist_post_private = 1
+let g:gist_get_multiplefile = 1
 
 " Bufflist options
 let g:BufferListWidth = 25
