@@ -19,3 +19,6 @@
 [submodule "bundle/gist"]
 	path = bundle/gist
 	url = git://github.com/mattn/gist-vim.git
+[submodule "bundle/toml"]
+	path = bundle/toml
+	url = git://github.com/cespare/vim-toml.git
