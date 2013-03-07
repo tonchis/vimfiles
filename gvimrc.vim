@@ -13,7 +13,7 @@ set columns=120 lines=45
 " set columns=198 lines=64
 
 " Color settings
-color railscasts
+color jellybeans
 
 " Load common settings
 source ~/.vim/config/config.vim
