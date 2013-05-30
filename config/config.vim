@@ -90,6 +90,9 @@ let g:BufferListMaxWidth = 50
 hi BufferSelected guifg=darkcyan guibg=black
 hi BufferNormal guifg=white guibg=black
 
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
 " Other files.
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/commenter.vim
