@@ -7,6 +7,9 @@ augroup filetypedetect
   " Bash aliases and functions
   au! BufNewFile,BufRead *.bash*,.env*,*.sh* setf sh
 
+  " html
+  au! BufNewFile,BufRead *.html setf html
+
   " Haml xHTML Abstraction Markup Language
   au! BufNewFile,BufRead *.haml setf haml
 
