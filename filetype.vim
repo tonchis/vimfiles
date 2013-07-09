@@ -5,7 +5,7 @@ endif
 augroup filetypedetect
 
   " Bash aliases and functions
-  au! BufNewFile,BufRead *.bash* setf sh
+  au! BufNewFile,BufRead *.bash*,.env*,*.sh* setf sh
 
   " Haml xHTML Abstraction Markup Language
   au! BufNewFile,BufRead *.haml setf haml
