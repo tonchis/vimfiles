@@ -93,7 +93,7 @@ syn match rubyFloat  "\<\%(0\|[1-9]\d*\%(_\d\+\)*\)\%(\.\d\+\%(_\d\+\)*\)\=\%([e
 syn match rubyLocalVariableOrMethod "\<[_[:lower:]][_[:alnum:]]*[?!=]\=" contains=NONE display transparent
 syn match rubyBlockArgument      "&[_[:lower:]][_[:alnum:]]"     contains=NONE display transparent
 
-syn match  rubyConstant          "\%(\%([.@$]\@<!\.\)\@<!\<\|::\)\_s*\zs\u\a*\%(\>\|::\)\@=\%(\s*(\)\@!"
+syn match  rubyConstant          "\%(\%([.@$]\@<!\.\)\@<!\<\|::\)\_s*\zs\u\%(\a\|\d\)*\%(\>\|::\)\@=\%(\s*(\)\@!"
 syn match  rubyUppercaseConstant "\%(\%([.@$]\@<!\.\|::\)\@<!\<\)\_s*\zs\%(\u_\?\)*\>\@=\%(\%(\s*(\|::\)\)\@!"
 syn match  rubyClassVariable    "@@\h\w*" display
 syn match  rubyInstanceVariable    "@\h\w*"  display
@@ -320,6 +320,7 @@ else
 endif
 hi def link rubyClassVariable    rubyIdentifier
 hi def link rubyConstant    Type
+hi def link rubyUppercaseConstant    Type
 hi def link rubyGlobalVariable    rubyIdentifier
 hi def link rubyBlockParameter    rubyIdentifier
 hi def link rubyInstanceVariable  rubyIdentifier
