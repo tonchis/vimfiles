@@ -30,7 +30,7 @@ imap <F10> <ESC>:set hlsearch!<CR>a
 " Handle trailing whitespaces and tabs.
 map <F11> <ESC>:%s/\s*$//g<CR>:%s/\t/  /<CR>
 
-map <F12> <Nop>
+map <F12> :g/pry/d<CR>
 
 " Start and stop the webserver
 " map <Leader>start <ESC>:!thin start -R config.ru -d<CR>
