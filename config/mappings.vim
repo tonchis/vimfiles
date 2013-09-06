@@ -86,3 +86,7 @@ nmap <C-O> :tabe<CR>:CommandT<CR>
 nmap <C-I> :vs<CR>:CommandT<CR>
 " Opens CommandT buffer list
 map <C-b> :CommandTBuffer<CR>
+
+" Scrolls
+nmap <C-J> <C-E>
+nmap <C-K> <C-Y>
