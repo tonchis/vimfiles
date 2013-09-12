@@ -101,4 +101,3 @@ source ~/.vim/config/execute-test.vim
 source ~/.vim/config/tab-autocomplete.vim
 source ~/.vim/config/imap-snippets.vim
 source ~/.vim/config/preview-results.vim
-source ~/.vim/plugin/to-github.vim
