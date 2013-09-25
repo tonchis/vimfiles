@@ -82,6 +82,10 @@ let g:gist_clip_command = 'pbcopy'
 let g:gist_post_private = 1
 let g:gist_get_multiplefile = 1
 
+" ToGithub options
+let g:to_github_clip_command = 'pbcopy'
+let g:to_github_clipboard = 1
+
 " Bufflist options
 let g:BufferListWidth = 25
 let g:BufferListMaxWidth = 50
