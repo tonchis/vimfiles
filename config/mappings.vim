@@ -1,11 +1,6 @@
 " Source current file
 map <F1> :source %<CR>
 
-" Reload CommandT
-map <F2> :CommandTFlush<CR>
-" Open CommandT
-map <F3> :CommandT<CR>
-
 " Toggle spell
 map <F4> <ESC>:set spell!<CR>
 imap <F4> <ESC>:set spell!<CR>
@@ -79,11 +74,4 @@ imap <Space> <Space><C-g>u
 " Move left and right one word
 imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
-
-" Open CommandT in new tab.
-nmap <C-O> :tabe<CR>:CommandT<CR>
-" Open CommandT in vertical split.
-nmap <C-I> :vs<CR>:CommandT<CR>
-" Opens CommandT buffer list
-map <C-b> :CommandTBuffer<CR>
 
