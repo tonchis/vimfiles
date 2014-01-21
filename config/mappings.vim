@@ -1,6 +1,8 @@
 " Source current file
 map <F1> :source %<CR>
 
+map <F2> :CtrlPClearCache<CR>
+
 " Toggle spell
 map <F4> <ESC>:set spell!<CR>
 imap <F4> <ESC>:set spell!<CR>
