@@ -97,6 +97,10 @@ hi BufferNormal guifg=white guibg=black
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
+" Use old regex engine. Faster for ruby sintax highlighting.
+" See http://stackoverflow.com/questions/16902317/vim-slow-with-ruby-syntax-highlighting
+set re=1
+
 " Other files.
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/commenter.vim
