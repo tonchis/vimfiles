@@ -1,33 +1,8 @@
-This vimfiles are cloned from soveran's with a few personal adjustments in snippets and colors.
+My .vim files.
 
-Usage
-=====
+Install
+-------
 
-First, backup your existing `.vim` directory:
+Just run `$ ./install`. It will symlink `~/.vimrc` and `~/.gvimrc` to `vimrc.vim` and `gvimrc.vim`
 
-    mv ~/.vim ~/.vim-backup
-
-And backup your configuration files:
-
-    mv ~/.vimrc ~/.vimrc-backup
-    mv ~/.gvimrc ~/.gvimrc-backup
-
-Now clone this repository:
-
-    git clone git://github.com/tonchis/vimfiles.git ~/.vim
-
-In your `~/.vimrc` put this:
-
-    source ~/.vim/vimrc.vim
-
-And in your `~/.gvimrc` put this:
-
-    source ~/.vim/gvimrc.vim
-
-Finally, you will need to install `curl`
-
-    sudo aptitude install curl
-
-You may want to explore the `~/.vim/config` directory to see what's
-included and `~/.vim/config/mappings.vim` to see how to use the
-available tools.
+It'll also `init` and `update` the submodules.
