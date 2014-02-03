@@ -1,9 +1,9 @@
 #!/bin/bash
 
 rm "$HOME/.gvimrc"
-ln -s "$HOME/.gvimrc" "$PWD/gvimrc.vim"
+ln -s "$PWD/gvimrc.vim" "$HOME/.gvimrc"
 rm "$HOME/.vimrc"
-ln -s "$HOME/.vimrc" "$PWD/vimrc.vim"
+ln -s "$PWD/vimrc.vim" "$HOME/.vimrc"
 
 git submodule init
 git submodule update
