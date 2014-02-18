@@ -28,3 +28,6 @@
 [submodule "bundle/vim-to-github"]
 	path = bundle/vim-to-github
 	url = https://github.com/tonchis/vim-to-github.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline
