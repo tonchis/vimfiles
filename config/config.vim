@@ -54,11 +54,6 @@ set complete=.,w,b,u
 set wildmenu
 set wildmode=list:longest
 
-" Fool Vim in case I'm running Fish shell
-if $SHELL =~ 'bin/fish'
-  set shell=/bin/sh
-endif
-
 " Case insensitive, incremental search, manual folds, etc.
 set nocompatible
 set autoindent
@@ -95,17 +90,23 @@ hi BufferSelected guifg=darkcyan guibg=black
 hi BufferNormal guifg=white guibg=black
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+match OverLength /\%101v.\+/
 
 " Use old regex engine. Faster for ruby sintax highlighting.
 " See http://stackoverflow.com/questions/16902317/vim-slow-with-ruby-syntax-highlighting
 set re=1
 
+" Ctrl-P options
+let g:ctrlp_mruf_exclude = 'node_modules/.*'
+set wildignore+=*node_modules/*
+let g:ctrlp_mruf_include = '\.tele/.*'
+
+" Autoload changed files
+set autoread
+
 " Other files.
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/commenter.vim
-source ~/.vim/config/execute-file.vim
-source ~/.vim/config/execute-test.vim
 source ~/.vim/config/tab-autocomplete.vim
 source ~/.vim/config/imap-snippets.vim
 source ~/.vim/config/preview-results.vim
