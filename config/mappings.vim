@@ -3,6 +3,10 @@ map <F1> :source %<CR>
 
 map <F2> :CtrlPClearCache<CR>
 
+" Will reload files from disk if they were changed externally. Needs set
+" autoread
+map <F3> :checktime<CR>
+
 " Toggle spell
 map <F4> <ESC>:set spell!<CR>
 imap <F4> <ESC>:set spell!<CR>

@@ -101,7 +101,7 @@ let g:ctrlp_mruf_exclude = 'node_modules/.*'
 set wildignore+=*node_modules/*
 let g:ctrlp_mruf_include = '\.tele/.*'
 
-" Autoload changed files
+" Autoload changed files when using :checktime
 set autoread
 
 " Other files.
