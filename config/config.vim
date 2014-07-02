@@ -34,7 +34,7 @@ set laststatus=2
 set cursorline
 
 " Match lines over 100 columns with OverLength group.
-au BufWinEnter * let w:m2=matchadd('OverLength', '\%>100v.\+', -1)
+au BufWinEnter * let w:m2=matchadd('OverLength', '\%>124v.\+', -1)
 
 " Temp files
 set nobackup
@@ -89,8 +89,8 @@ let g:BufferListMaxWidth = 50
 hi BufferSelected guifg=darkcyan guibg=black
 hi BufferNormal guifg=white guibg=black
 
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%101v.\+/
+hi OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%>124v.\+/
 
 " Use old regex engine. Faster for ruby sintax highlighting.
 " See http://stackoverflow.com/questions/16902317/vim-slow-with-ruby-syntax-highlighting

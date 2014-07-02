@@ -13,6 +13,7 @@ call IMAP('do--', "do\n<++>\nend", 'ruby')
 call IMAP('do --', "do |<++>|\n<++>\nend", 'ruby')
 call IMAP('{--', "{|<++>| <++>}", 'ruby')
 call IMAP('//', "\/<++>\/", 'ruby')
+call IMAP('|\', "|<++>|", 'ruby')
 call IMAP(':--', "\:<++> => <++>", 'ruby')
 call IMAP('case--', "case <++>\nwhen <++>\nend",'ruby')
 
@@ -27,6 +28,7 @@ call IMAP('before--', "before do\n<++>\nend", 'ruby')
 call IMAP('desc--', "describe <++> do\n<++>\nend", 'ruby')
 call IMAP('it--', "it '<++>' do\n<++>\nend", 'ruby')
 call IMAP('let--', "let(<++>) do\n<++>\nend", 'ruby')
+call IMAP('prepare--', "prepare do\n<++>\nend", 'ruby')
 
 " Sinatra
 call IMAP('get--', "get <++> do\n<++>\nend" , 'ruby')
@@ -36,10 +38,6 @@ call IMAP('delete--', "delete <++> do\n<++>\nend" , 'ruby')
 
 " Cuba
 call IMAP('on--', "on <++> do\n<++>\nend" , 'ruby')
-call IMAP('oget--', "on get<++> do\n<++>\nend" , 'ruby')
-call IMAP('opost--', "on post<++> do\n<++>\nend" , 'ruby')
-call IMAP('oput--', "on put<++> do\n<++>\nend" , 'ruby')
-call IMAP('odelete--', "on delete<++> do\n<++>\nend" , 'ruby')
 
 " Helpers
 call IMAP('saop--', "save_and_open_page", 'ruby')
