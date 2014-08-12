@@ -84,8 +84,6 @@ let g:to_github_clipboard = 1
 " Bufflist options
 let g:BufferListWidth = 25
 let g:BufferListMaxWidth = 50
-" hi BufferSelected term=reverse ctermfg=white ctermbg=red cterm=bold
-" hi BufferNormal term=NONE ctermfg=black ctermbg=darkcyan cterm=NONE
 hi BufferSelected guifg=darkcyan guibg=black
 hi BufferNormal guifg=white guibg=black
 
@@ -99,7 +97,6 @@ set re=1
 " Ctrl-P options
 let g:ctrlp_mruf_exclude = 'node_modules/.*'
 set wildignore+=*node_modules/*
-let g:ctrlp_mruf_include = '\.tele/.*'
 
 " Autoload changed files when using :checktime
 set autoread
