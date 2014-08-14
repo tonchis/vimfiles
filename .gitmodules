@@ -38,3 +38,6 @@
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "bundle/vim-ag"]
+	path = bundle/vim-ag
+	url = https://github.com/vim-scripts/ag.vim
