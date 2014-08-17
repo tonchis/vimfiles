@@ -193,7 +193,7 @@ syn cluster rubyDeclaration  contains=rubyAliasDeclaration,rubyAliasDeclaration2
 " Keywords
 " Note: the following keywords have already been defined:
 " begin case class def do end for if module unless until while
-syn match   rubyControl    "\<\%(and\|break\|ensure\|in\|next\|not\|or\|redo\|rescue\|retry\|return\)\>[?!]\@!"
+syn match   rubyControl    "\<\%(and\|break\|in\|next\|not\|or\|redo\|rescue\|retry\|return\)\>[?!]\@!"
 syn match   rubyOperator  "\<defined?" display
 syn match   rubyKeyword    "\<\%(super\|yield\)\>[?!]\@!"
 syn match   rubyBoolean    "\<\%(true\|false\)\>[?!]\@!"
@@ -258,7 +258,7 @@ if !exists("ruby_no_special_methods")
   syn keyword rubyAttribute attr_accessor attr_reader attr_writer
   syn match   rubyControl   "\<\%(exit!\|\%(abort\|at_exit\|exit\|fork\|loop\|trap\)\>[?!]\@!\)"
   syn keyword rubyEval      eval class_eval instance_eval module_eval
-  syn keyword rubyException raise fail catch throw
+  syn keyword rubyException raise fail catch throw ensure
   " false positive with 'include?'
   syn match   rubyInclude   "\<include\>[:?!(]\@!"
   syn keyword rubyInclude   autoload extend load require require_relative
