@@ -1,5 +1,5 @@
 " Source current file
-noremap <F1> :source %<CR>
+noremap <F1> :source %<CR>:source $MYVIMRC<CR>
 
 noremap <F2> :CtrlPClearCache<CR>
 
