@@ -29,6 +29,7 @@ set smarttab
 set textwidth=0
 set showtabline=2
 set laststatus=2
+set tabpagemax=100
 
 " Cursor line
 set cursorline

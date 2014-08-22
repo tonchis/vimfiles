@@ -17,7 +17,7 @@ inoremap <F10> <ESC>:set hlsearch!<CR>a
 " Handle trailing whitespaces and tabs.
 noremap <F11> <ESC>:%s/\s*$//g<CR>:%s/\t/  /<CR>
 
-noremap <F12> :g/pry/d<CR>
+noremap <F12> :silent tabdo g/pry/d<CR>:wa<CR>
 
 noremap <F5> <Nop>
 noremap <F6> <Nop>
