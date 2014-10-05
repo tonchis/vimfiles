@@ -41,3 +41,6 @@
 [submodule "bundle/vim-ag"]
 	path = bundle/vim-ag
 	url = https://github.com/vim-scripts/ag.vim
+[submodule "bundle/vim-copy-as-rtf"]
+	path = bundle/vim-copy-as-rtf
+	url = https://github.com/zerowidth/vim-copy-as-rtf.git
