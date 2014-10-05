@@ -56,5 +56,8 @@ inoremap <Space> <Space><C-g>u
 inoremap <C-L> <ESC>la
 inoremap <C-H> <ESC>ha
 
-nnoremap <Leader>s" ysiw"
-nnoremap <Leader>s' ysiw'
+" Use H to alias $ and L to alias ^
+nnoremap H ^
+nnoremap L $
+vnoremap H ^
+vnoremap L $
