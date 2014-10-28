@@ -29,6 +29,7 @@ call IMAP('desc--', "describe <++> do\n<++>\nend", 'ruby')
 call IMAP('it--', "it '<++>' do\n<++>\nend", 'ruby')
 call IMAP('let--', "let(<++>) do\n<++>\nend", 'ruby')
 call IMAP('prepare--', "prepare do\n<++>\nend", 'ruby')
+call IMAP('scope--', "scope do\n<++>\nend", 'ruby')
 
 " Sinatra
 call IMAP('get--', "get <++> do\n<++>\nend" , 'ruby')
