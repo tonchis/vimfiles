@@ -65,6 +65,7 @@ set ignorecase
 set smartcase
 set foldmethod=manual
 set number
+set relativenumber
 set incsearch
 set nohlsearch
 
