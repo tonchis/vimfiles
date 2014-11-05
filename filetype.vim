@@ -14,7 +14,7 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.haml setf haml
 
   " HTML with Ruby - eRuby
-  au! BufNewFile,BufRead *.erb,*.rhtml setf eruby
+  au! BufNewFile,BufRead *.erb,*.rhtml,*.mote setf eruby
 
   " Markdown files
   au! BufNewFile,BufRead *.markdown,*.md setf markdown
