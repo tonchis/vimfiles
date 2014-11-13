@@ -97,8 +97,17 @@ match OverLength /\%>124v.\+/
 set re=1
 
 " Ctrl-P options
-let g:ctrlp_mruf_exclude = 'node_modules/.*'
-set wildignore+=*node_modules/*
+" Way faster than Ctrl-P's original indexer.
+" See http://blog.patspam.com/2014/super-fast-ctrlp
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .gitkeep
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ --ignore node_modules
+      \ -g ""'
 
 " Autoload changed files when using :checktime
 set autoread
