@@ -3,7 +3,7 @@
 " Maintainer:   Armin Ronacher <armin.ronacher@active-4.com>
 " URL:          http://lucumr.pocoo.org/
 " Last Change:  2008 September 12
-" Version:  0.6.1
+" Version:	0.6.1
 "
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -65,4 +65,3 @@ if version >= 508 || !exists("did_mote_syn_inits")
 endif
 
 let b:current_syntax = "eruby"
-
