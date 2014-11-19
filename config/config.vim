@@ -1,8 +1,8 @@
-" To make textobj-rubyblock work
-runtime macros/matchit.vim
-
 " Pathogen
 execute pathogen#infect()
+
+" To make textobj-rubyblock work
+runtime macros/matchit.vim
 
 " Basic settings
 syntax on
@@ -34,9 +34,6 @@ set tabpagemax=100
 " Cursor line
 set cursorline
 
-" Match lines over 100 columns with OverLength group.
-au BufWinEnter * let w:m2=matchadd('OverLength', '\%>124v.\+', -1)
-
 " Temp files
 set nobackup
 set nowritebackup
@@ -65,7 +62,6 @@ set ignorecase
 set smartcase
 set foldmethod=manual
 set number
-set relativenumber
 set incsearch
 set nohlsearch
 
@@ -89,9 +85,6 @@ let g:BufferListMaxWidth = 50
 hi BufferSelected guifg=darkcyan guibg=black
 hi BufferNormal guifg=white guibg=black
 
-hi OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%>124v.\+/
-
 " Use old regex engine. Faster for ruby sintax highlighting.
 " See http://stackoverflow.com/questions/16902317/vim-slow-with-ruby-syntax-highlighting
 set re=1
@@ -100,14 +93,14 @@ set re=1
 " Way faster than Ctrl-P's original indexer.
 " See http://blog.patspam.com/2014/super-fast-ctrlp
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
-      \ --ignore .git
-      \ --ignore .gitkeep
-      \ --ignore .svn
-      \ --ignore .hg
-      \ --ignore .DS_Store
-      \ --ignore "**/*.pyc"
-      \ --ignore node_modules
-      \ -g ""'
+  \ --ignore .git
+  \ --ignore .gitkeep
+  \ --ignore .svn
+  \ --ignore .hg
+  \ --ignore .DS_Store
+  \ --ignore "**/*.pyc"
+  \ --ignore node_modules
+  \ -g ""'
 
 " Autoload changed files when using :checktime
 set autoread

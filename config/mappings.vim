@@ -1,14 +1,13 @@
-" Source current file
 noremap <F1> :source %<CR>:source $MYVIMRC<CR>
+noremap <Leader>r :source $MYVIMRC<CR>
 
 noremap <F2> :CtrlPClearCache<CR>
 
-" Will reload files from disk if they were changed externally. Needs set
-" autoread
+" Will reload files from disk if they were changed externally. Needs :set autoread
 noremap <F3> :checktime<CR>
 
-" Toggle spell
 noremap <F4> <ESC>:!ruby %<CR>
+noremap <Leader><F4> <ESC>:!cutest %<CR>
 
 " Toggle search highlight
 noremap <F10> :set hlsearch!<CR>
@@ -61,3 +60,10 @@ nnoremap H ^
 nnoremap L $
 vnoremap H ^
 vnoremap L $
+
+" Copy to clipboard
+vnoremap <Leader>c "*y
+
+noremap <Leader>p :set paste<CR>
+noremap <Leader>n :set nopaste<CR>
+
