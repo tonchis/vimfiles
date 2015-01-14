@@ -62,8 +62,7 @@ vnoremap H ^
 vnoremap L $
 
 " Copy to clipboard
-vnoremap <Leader>c "*y
+noremap <Leader>c "*y
 
-noremap <Leader>p :set paste<CR>
-noremap <Leader>n :set nopaste<CR>
-
+" Paste from clipboard
+noremap <Leader>v :set paste<CR>"*p<ESC>:set nopaste<CR>
