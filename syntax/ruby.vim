@@ -144,11 +144,11 @@ syn region rubyString matchgroup=rubyStringDelimiter start="%[qw]{"            e
 syn region rubyString matchgroup=rubyStringDelimiter start="%[qw]<"            end=">"   skip="\\\\\|\\>"   fold  contains=rubyNestedAngleBrackets,rubyDelimEscape
 syn region rubyString matchgroup=rubyStringDelimiter start="%[qw]\["            end="\]"  skip="\\\\\|\\\]"   fold  contains=rubyNestedSquareBrackets,rubyDelimEscape
 syn region rubyString matchgroup=rubyStringDelimiter start="%[qw]("            end=")"   skip="\\\\\|\\)"   fold  contains=rubyNestedParentheses,rubyDelimEscape
-syn region rubySymbol matchgroup=rubySymbolDelimiter start="%[s]\z([~`!@#$%^&*_\-+=|\:;"',.?/]\)"   end="\z1" skip="\\\\\|\\\z1" fold
-syn region rubySymbol matchgroup=rubySymbolDelimiter start="%[s]{"            end="}"   skip="\\\\\|\\}"   fold  contains=rubyNestedCurlyBraces,rubyDelimEscape
-syn region rubySymbol matchgroup=rubySymbolDelimiter start="%[s]<"            end=">"   skip="\\\\\|\\>"   fold  contains=rubyNestedAngleBrackets,rubyDelimEscape
-syn region rubySymbol matchgroup=rubySymbolDelimiter start="%[s]\["            end="\]"  skip="\\\\\|\\\]"   fold  contains=rubyNestedSquareBrackets,rubyDelimEscape
-syn region rubySymbol matchgroup=rubySymbolDelimiter start="%[s]("            end=")"   skip="\\\\\|\\)"   fold  contains=rubyNestedParentheses,rubyDelimEscape
+syn region rubySymbol matchgroup=rubySymbolDelimiter start="%[siI]\z([~`!@#$%^&*_\-+=|\:;"',.?/]\)"   end="\z1" skip="\\\\\|\\\z1" fold
+syn region rubySymbol matchgroup=rubySymbolDelimiter start="%[siI]{"            end="}"   skip="\\\\\|\\}"   fold  contains=rubyNestedCurlyBraces,rubyDelimEscape
+syn region rubySymbol matchgroup=rubySymbolDelimiter start="%[siI]<"            end=">"   skip="\\\\\|\\>"   fold  contains=rubyNestedAngleBrackets,rubyDelimEscape
+syn region rubySymbol matchgroup=rubySymbolDelimiter start="%[siI]\["            end="\]"  skip="\\\\\|\\\]"   fold  contains=rubyNestedSquareBrackets,rubyDelimEscape
+syn region rubySymbol matchgroup=rubySymbolDelimiter start="%[siI]("            end=")"   skip="\\\\\|\\)"   fold  contains=rubyNestedParentheses,rubyDelimEscape
 
 " Generalized Double Quoted String and Array of Strings and Shell Command Output
 " Note: %= is not matched here as the beginning of a double quoted string
