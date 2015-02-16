@@ -118,5 +118,4 @@ let javascript_enable_domhtmlcss = 1
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/commenter.vim
 source ~/.vim/config/tab-autocomplete.vim
-source ~/.vim/config/imap-snippets.vim
 source ~/.vim/config/preview-results.vim
