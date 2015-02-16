@@ -66,3 +66,11 @@ noremap <Leader>c "*y
 
 " Paste from clipboard
 noremap <Leader>v :set paste<CR>"*p<ESC>:set nopaste<CR>
+
+" Easier char handling.
+inoremap () ()<Esc>i
+inoremap {} {}<Esc>i
+inoremap [] []<Esc>i
+inoremap "" ""<Esc>i
+inoremap '' ''<Esc>i
+inoremap <> <><Esc>i
