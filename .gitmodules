@@ -44,3 +44,9 @@
 [submodule "bundle/vim-copy-as-rtf"]
 	path = bundle/vim-copy-as-rtf
 	url = https://github.com/zerowidth/vim-copy-as-rtf.git
+[submodule "bundle/vim-javacsript"]
+	path = bundle/vim-javacsript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git

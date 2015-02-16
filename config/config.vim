@@ -105,8 +105,11 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
 " Autoload changed files when using :checktime
 set autoread
 
-" Use tree view in Netrw
+" Use tree view in Netrw.
 let g:netrw_liststyle = 3
+
+" Use jsx syntax in js files.
+let g:jsx_ext_required = 0
 
 " Other files.
 source ~/.vim/config/mappings.vim
