@@ -111,6 +111,9 @@ let g:netrw_liststyle = 3
 " Use jsx syntax in js files.
 let g:jsx_ext_required = 0
 
+" Highlight JS in html and css files.
+let javascript_enable_domhtmlcss = 1
+
 " Other files.
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/commenter.vim
