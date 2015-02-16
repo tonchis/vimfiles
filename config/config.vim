@@ -105,6 +105,9 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
 " Autoload changed files when using :checktime
 set autoread
 
+" Use tree view in Netrw
+let g:netrw_liststyle = 3
+
 " Other files.
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/commenter.vim
