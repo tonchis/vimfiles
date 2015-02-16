@@ -16,6 +16,8 @@ call IMAP('//', "\/<++>\/", 'ruby')
 call IMAP('|\', "|<++>|", 'ruby')
 call IMAP(':--', "\:<++> => <++>", 'ruby')
 call IMAP('case--', "case <++>\nwhen <++>\nend",'ruby')
+call IMAP(',,', "<++> do\n<++>\nend", 'ruby')
+call IMAP(',.', "<++> do |<++>|\n<++>\nend", 'ruby')
 
 " Tests
 call IMAP('should--', "should '<++>' do\n<++>\nend", 'ruby')
