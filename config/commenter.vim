@@ -16,6 +16,8 @@ au! FileType dc         let b:comment = '#'
 au! FileType sh         let b:comment = '#'
 au! FileType bandicoot  let b:comment = '#'
 au! FileType zsh        let b:comment = '#'
+au! FileType css        let b:comment = '//'
+au! FileType scss       let b:comment = '//'
 
 function! CommentAndUncomment() range
   if !exists("b:comment")
