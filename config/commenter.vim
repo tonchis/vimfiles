@@ -19,6 +19,7 @@ au! FileType zsh        let b:comment = '#'
 au! FileType css        let b:comment = '//'
 au! FileType scss       let b:comment = '//'
 au! FileType gitcommit  let b:comment = '#'
+au! FileType yaml       let b:comment = '#'
 
 function! CommentAndUncomment() range
   if !exists("b:comment")
